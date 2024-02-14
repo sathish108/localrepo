@@ -1,0 +1,17 @@
+                 GitHub Repository
+                       |
+                       |
+                       V
+           GitHub Webhook Trigger
+                       |
+                       |
+                       V
+               AWS CodePipeline
+   ┌──────────────┐    |    ┌─────────────┐
+   │   Source     │----+--->│   SonarQube │
+   │   Stage      │    |    │   Analysis  │
+   └──────────────┘    |    └─────────────┘
+                       |
+                       |
+                       V
+               Build and Deploy to ECS
